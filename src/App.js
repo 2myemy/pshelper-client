@@ -1,12 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+import Home from './Home.js';
+import Algorithm from './Algorithm.js';
 
-function App() {
-  return (
-    <div className="App">
-     PSHELPER CLIENT
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Route exact path="/" component={Home}/>
+        <Route path="/algorithm" component={Algorithm}/>
+      </div>
+    );
+  }
 }
 
 export default App;

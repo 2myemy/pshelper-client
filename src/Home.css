@@ -1,20 +1,18 @@
-.Him {
+.Home {
   text-align: center;
-  max-width: 85vw;
-  min-height: 100vh;
-  max-height: 100vh;
 }
 
-.App-body {
+.Home-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .App-logo {
   margin-top: 10px;
-  height: 15vmin;
+  height: 17vmin;
   pointer-events: none;
 }
 
