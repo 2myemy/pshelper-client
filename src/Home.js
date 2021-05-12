@@ -2,54 +2,35 @@ import './Home.css';
 import styled from 'styled-components';
 
 function Home() {
-  const InputField1 = styled.input`
-    height: 40vh;
-    width: 50vw;
-    margin: 15px 0 15px 0;
-    color: white;
-    border: 3px solid #1cc4bb;
-    border-radius: 3px;
-    background-color: rgb(50,50,50);
-    padding: 10px;
-  `;
-
-  const InputField2 = styled.input`
-    height: 20vh;
-    width: 50vw;
-    margin: 15px 0 0 0;
-    color: white;
-    border: 3px solid #1cc4bb;
-    border-radius: 3px;
-    background-color: rgb(50,50,50);
-    padding: 10px;
-  `;
-
   const Button = styled.button`
   display: inline-block;
-  color: #1cc4bb;
-  background-color: rgb(30,35,40);
-  font-size: 1em;
+  color: rgb(59,96,229);
+  font-family: 'Didact Gothic', sans-serif;
   text-decoration: none;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 3px solid #1cc4bb;
-  border-radius: 3px;
-  display: block;
+  padding: 0.8em 1em;
+  border: 2px solid rgb(59,96,229);
+  border-radius: 10px;
+  height: 23px;
+  width: 150px;
 `;
 
   return (
     <div className="Home">
       <div className="Home-body">
         <div className="App-logo">
-          <img className="Logo-img" src="pshelper-logo.png" alt="logo" />
+          <div className="Logo">PSHELPER</div>
+          <div className="Logo-sub">2021</div>
         </div>
-        <InputField1
-          type="text"
-        />
-        <InputField2
-          type="text"
-        />
-        <Button as="a" href="/algorithm">Submit</Button>
+        {/* <div className="Discription">
+          <div className="Discription-title">
+            알고리즘 문제풀이를 도와드립니다.
+          </div>
+          <div className="Discription-sub">
+            ACM-ICPC, 대기업 코딩테스트, 프로그래밍 대회와 같은 많은 곳에서 알고리즘 문제풀이 ( PS )가 행해지고 있습니다.<br/>
+            PSHELPER와 함께 문제를 분석하고, 풀이 방법을 공부해보세요.
+          </div>
+        </div> */}
+        <Button as="a" href="/comingsoon">지금 시작하기  ▶</Button>
       </div>
     </div>
   );
